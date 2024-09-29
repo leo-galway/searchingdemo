@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Linear Search Demo</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.1/css/bulma.min.css">
+</head>
+<body>
+    <section class="section">
+        <container class="container">
+                <div class="columns">
+                    <div class="column">
+                       <h1 class="title">Linear Search</h1> 
+                    </div>
+                </div>
+
+                <div class="columns">
+                    <div class="column">
+                        <h3 class="subtitle">Array of Integers</h3>
+                    </div>
+                </div>
+
+                <div class="columns">
+                    <div class="column">
+                        <div class="field">
+                            <div class="control">
+                                <input class="input" type="text" id="arrayVals" disabled>
+                            </div>
+                        </div>
+                    </div>
+                     <div class="column">
+                        <div class="control">
+                            <button class="button is-link" id="generateBtn">Generate</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="columns">
+                    <div class="column">
+                        <h3 class="subtitle">Search Key</h3>
+                    </div>
+                </div>
+
+                <div class="columns">
+                    <div class="column is-1">
+                        <div class="field">
+                            <div class="control">
+                                <input class="input has-text-centered" type="text" inputmode="numeric" name="searchKey" id="searchVal">
+                            </div>
+                        </div>
+                    </div>
+
+                     <div class="column is-2">
+                        <div class="control">
+                            <button class="button is-link" id="searchBtn" value="linear">Search</button>
+                        </div>
+                    </div>
+
+                    <div class="column is-9">
+                        <p class="block has-text-left px-1 py-2" id="searchResult"></p>
+                    </div>
+                </div>
+
+        </container>
+    </section>
+
+    <script type="module">
+        import { registerEventHandlersLinearSearch } from './functions/utils.js';
+        registerEventHandlersLinearSearch();
+    </script>
+</body>
+</html>
